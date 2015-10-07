@@ -1543,6 +1543,31 @@
 		</execute>
 	</command>
 
+	<command name="SortByVersion" priority="4">
+		<execute macro="Page#gotoContentCP">
+			<var name="portletName" value="Web Content" />
+		</execute>
+
+		<execute macro="WebContentNavigator#gotoAddCP" />
+
+		<execute macro="WebContent#addCP">
+			<var name="webContentContent" value="WC WebContent Content" />
+			<var name="webContentTitle" value="WC WebContent Title" />
+		</execute>
+
+		<execute macro="WebContent#publish" />
+
+		<execute macro="WebContent#viewHistoryCP">
+			<var name="webContentTitle" value="WC WebContent Title" />
+		</execute>
+
+		<execute macro="WebContent#expireViaViewHistoryCP" >
+			<var name="webContentTitle" value="WC WebContent Title" />
+		</execute>
+
+		<execute macro="WebContent#sortByVersion" />
+	</command>
+
 	<command name="UserEditWebContent" priority="4">
 		<var name="roleType" value="Regular" />
 
