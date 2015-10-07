@@ -8,25 +8,31 @@
 <tr><td rowspan="1" colspan="3">WCViewHistory</td></tr>
 </thead>
 <tbody>
+<!--SORT_BY-->
+<tr>
+	<td>SORT_BY_SELECT</td>
+	<td>//select[contains(@class,'form-control')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>SORT_VERSION</td>
+	<td>//select[contains(@class,'form-control')]/option[contains(.,'Version')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>EXPIRE_ICON</td>
+	<td>//span[contains(@class,'icon-time')]</td>
+	<td></td>
+</tr>
 <!--VERSIONS_TABLE-->
 <tr>
 	<td>VERSIONS_TABLE_TITLE</td>
 	<td>//tr[contains(.,'${key_webContentTitle}')]/td[contains(.,'${key_webContentTitle}')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>VERSIONS_TABLE_VERSION_1.0</td>
-	<td>//tr[contains(.,'${key_webContentTitle}')]/td[contains(.,'1.0')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>VERSIONS_TABLE_VERSION_1.1</td>
-	<td>//tr[contains(.,'${key_webContentTitle}')]/td[contains(.,'1.1')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>VERSIONS_TABLE_VERSION_1.2</td>
-	<td>//tr[contains(.,'${key_webContentTitle}')]/td[contains(.,'1.2')]</td>
 	<td></td>
 </tr>
 <tr>
