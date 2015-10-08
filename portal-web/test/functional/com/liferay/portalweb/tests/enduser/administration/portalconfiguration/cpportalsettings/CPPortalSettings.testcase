@@ -507,7 +507,7 @@
 
 		<execute macro="AssetPublisherPortlet#configureSiteScopePG">
 			<var name="siteName" value="${parentSite}" />
-			<var name="siteScopeType" value="Parent Site" />
+			<var name="siteScopeType" value="parent-site" />
 		</execute>
 
 		<execute macro="Page#openURL">
